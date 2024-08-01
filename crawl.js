@@ -41,7 +41,7 @@ export async function getURLsFromHTML(htmlBody, baseURL){
     const bURL = new URL(baseURL)
      const cURL = new URL(currentURL)
 
-    if(!bURL.host == cURL.host){
+    if(bURL.host != cURL.host){
         return;
     }
     const normalURL = normalizeURL(currentURL);
