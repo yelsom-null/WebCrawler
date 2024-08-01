@@ -1,7 +1,7 @@
-import {parseHtml, crawlPage} from './crawl.js'
+import {crawlPage, parseHtml} from './crawl.js'
 
-let baseURL = ''
+let baseURL = 'https://www.google.com'
 let pages = {}
 
-const response = await crawlPage();
+await crawlPage(baseURL, baseURL,pages)
 
